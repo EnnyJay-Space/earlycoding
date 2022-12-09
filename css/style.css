@@ -184,3 +184,9 @@ input+label {
     color: #DA1C5C !important;
 
 }
+.footer-link{
+    color: #F7941D;
+}
+.footer-link:hover{
+    color: #8CC63F;
+}
