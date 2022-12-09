@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     /* outline: 1px solid red; */
+    font-family: 'Poppins', sans-serif;
 }
 
 input,
@@ -122,131 +123,36 @@ nav.navbar {
     display: flex;
     /* justify-content: center; */
 }
-.box {
+
+/* Forms */
+.modal-content{
     width: 100%;
-    /* height: auto; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 10%;
 }
-.name {
-    width: 100%;
-    position: relative;
-    margin-bottom: 15px;
+.name-field {
+	z-index: 1;
 }
 
-.name i {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #bbb;
+.label-name {
+	z-index: 3;
+	top: 20%;
+	left: 2%;
+	transition: all 0.2s ease-in-out;
+	transform-origin: 0 0;
+	color: grey;
+	background-color: white;
+	padding: 0 10px;
 }
 
-.name input {
-    width: 100%;
-    padding: 20px 60px;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    background-color: #eee;
-    border-radius: 40px;
+.name-field:focus+label,
+.name-field:not(:placeholder-shown)+label {
+	font-weight: 500;
+	transform: translateY(-1em) scale(0.8);
+	color: grey;
 }
 
-.name input::placeholder {
-    color: #bbb;
-    font-weight: 500;
+input+label {
+	font-weight: 200;
 }
-
-.email {
-    width: 100%;
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.email i {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #bbb;
-}
-
-.email input {
-    width: 100%;
-    padding: 20px 60px;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    background-color: #eee;
-    border-radius: 40px;
-}
-.email input::placeholder {
-    color: #bbb;
-    font-weight: 500;
-}
-
-.message-box {
-    width: 100%;
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.message-box i {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #bbb;
-}
-
-.message-box textarea {
-    width: 100%;
-    padding: 20px 60px;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    background-color: #eee;
-    border-radius: 40px;
-}
-
-.message-box textarea::placeholder {
-    color: #bbb;
-    font-weight: 500;
-}
-
-
-
-.message {
-    width: 100%;
-    position: relative;
-    /* margin-bottom: 60px; */
-    display: flex;
-    justify-content: center;
-}
-.message .success {
-    font-size: 20px;
-    color: green;
-    position: absolute;
-    animation: buttons .3s linear;
-    display: none;
-}
-
-.message .danger {
-    font-size: 20px;
-    color: red;
-    position: absolute;
-    transition: .3s;
-    animation: buttons .3s linear;
-    display: none;
-}
-
 /* Backgrounds */
 .bg-primary {
     background-color: #DA1C5C !important;
