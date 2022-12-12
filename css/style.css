@@ -119,6 +119,7 @@ nav.navbar {
     color: #F7941D;
 }
 
+
 .img-effect {
     overflow: hidden !important;
     height: 50% !important;
@@ -131,6 +132,17 @@ nav.navbar {
     /* padding: 50px; */
     display: flex;
     /* justify-content: center; */
+}
+.contact-card{
+    border: none;
+    box-shadow: 5px 7px 10px rgba(98, 79, 99, 0.459);
+    /* margin: 10px; */
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90%;
+    padding: 30px;
 }
 
 /* Forms */
