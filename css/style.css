@@ -216,8 +216,9 @@ input+label {
     color: #F7941D !important;
 }
 
+/* Footer Section */
 .footer-link {
-    color: #F7941D;
+    color: #F7941D !important;
 }
 
 .footer-link:hover {
